@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-native-logs"
+        version="1.0.1">
+
+  <name>Native Logs</name>
+  <description>A Cordova plugin to retrieve native logs</description>
+ <engines>
+        <!-- required for CB-9171 & CB-9162 -->
+        <engine name="cordova-plugman" version=">=5.2.0" />
+        <!-- required for Android M Compatibility -->
+        <engine name="cordova-android" version=">=5.0.0" />
+        <!-- required for XCode7 Compatibility -->
+        <engine name="cordova-ios" version=">=3.9.2" />
+    </engines>
+
+    <js-module src="www/nativeLogs.js" name="NativeLogs">
+    <clobbers target="window.NativeLogs" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="NativeLogs">
+        <param name="android-package" value="com.del7a.nativelogs.NativeLogs" />
+        <param name="onload" value="true" />
+      </feature>
+    </config-file>
+    <source-file src="src/android/NativeLogs.java" target-dir="src/com/del7a/nativelogs" />
+  </platform>
+    
+    <!-- ios -->
+<platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="NativeLogs">
+        <param name="ios-package" value="CDVNativeLogs"/>
+         <param name="onload" value="true" />
+      </feature>
+    </config-file>
+    <header-file src="src/ios/CDVNativeLogs.h" target-dir="cordova-plugin-native-logs" />
+    <source-file src="src/ios/CDVNativeLogs.m" target-dir="cordova-plugin-native-logs" />
+  </platform>
+ 
+</plugin>

@@ -1,0 +1,25 @@
+{
+  "name": "cordova-plugin-native-logs",
+  "version": "1.0.1",
+  "description": "A Cordova plugin to retrieve native logs",
+  "types": "./types/index.d.ts",
+  "cordova": {
+    "id": "cordova-plugin-native-logs",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ogoguel/cordova-plugin-native-logs.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Olivier Goguel",
+  "license": "MIT",
+  "homepage": "https://github.com/ogoguel/cordova-plugin-native-logs#readme"
+}
