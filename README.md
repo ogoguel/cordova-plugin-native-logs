@@ -54,6 +54,9 @@ ionic state reset
 ionic run ios
 ionic run android
 ```
+
+#### Screenshots
+![IOS Screenshot](https://github.com/ogoguel/cordova-plugin-native-logs/tree/master/sample/screenshots/ios.png)
 #### Send logs through Email
 
 This plugin can be used in conjunction with mail composer plugin to let the user send the log via email
