@@ -2,19 +2,25 @@
 A Cordova plugin to retrieve native logs directly from your app to let your users easily share them with you for troubleshooting
 Those logs will be identical to the ones retrieved by the `adb logcat` command (Android), or displayed in  XCode debugger (iOS)
 
-####Platform support
+#### Platform support
+
 * iOS
 * Android
 
-####Installing
+#### Installing
+
 ```
 cordova plugin add cordova-plugin-native-logs
 ```
-####Uninstalling
+
+#### Uninstalling
+
 ```
 cordova plugin remove cordova-plugin-native-logs
 ```
-####Usage
+
+#### Usage
+
 ```
 NativeLogs.getLog(_nbLines,_bCopyToClipboard,_successCB)
 ```
@@ -25,13 +31,15 @@ Returns the latest available logs.
 * `_bCopyToClipboard`: copy the logs to the clipboard to let the user easily share it
 * `_successCB`: callback that will retrieve the log as a string
 
-####Example
+#### Example
+
 ```
-cordova.plugin.nativeLogs.getLog(1000,false, function(_logs) {
+NativeLogs.getLog(1000,false, function(_logs) {
 // do something w/ the logs
 }
 ```
-####Ionic Framework Support
+#### Ionic Framework Support
+
 To use the plugin in your project, just add this declaration :
 ```
 declare var NativeLogs:any;
@@ -46,8 +54,11 @@ ionic state reset
 ionic run ios
 ionic run android
 ```
-####Email support
+#### Send logs through Email
+
 This plugin can be used in conjunction with mail composer plugin to let the user send the log via email
 
-####History
+#### History
+
+* v1.0.2 Fix typo in documentation
 * v1.0.1 Initial release
