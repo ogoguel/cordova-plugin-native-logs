@@ -64,7 +64,7 @@ public class NativeLogs extends CordovaPlugin {
             log += logs.getLast();
             log += "\n";
             logs.removeLast();
-
+            nb++;
         }
         return log;
     }
