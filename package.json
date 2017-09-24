@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-native-logs",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "A Cordova plugin to retrieve native logs",
   "types": "./types/index.d.ts",
   "cordova": {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         id="cordova-plugin-native-logs"
-        version="1.0.3">
+        version="1.0.5">
 
   <name>Native Logs</name>
   <description>A Cordova plugin to retrieve native logs</description>

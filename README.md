@@ -63,6 +63,8 @@ This plugin can be used in conjunction with mail composer plugin to let the user
 
 #### History
 
+* v1.0.5 Fix version mismatched
+* v1.0.4 Fix NPM deployment
 * v1.0.3 Fix invalid log count (cf. issue #1)
 * v1.0.2 Fix typo in documentation
 * v1.0.1 Initial release
